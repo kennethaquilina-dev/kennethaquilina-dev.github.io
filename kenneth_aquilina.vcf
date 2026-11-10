@@ -1,0 +1,14 @@
+text
+BEGIN:VCARD
+VERSION:3.0
+N:Aquilina;Kenneth;;Mr.;
+FN:Mr. Kenneth Aquilina
+ORG:Terranova Industrial Supplies Ltd;Terranova Srl Group
+TITLE:Manager
+TEL;TYPE=CELL,VOICE:+35699471999
+EMAIL;TYPE=PREF,INTERNET:malta@terranovasrl.it
+URL;TYPE=WORK:https://terranovasrl.it
+URL;TYPE=CDU_Catalogue:https://cdu.net
+NOTE:NON-FERROUS METALS:\n- Stainless Steel: 303, 304, 316, 321, 410, 420, 431, 440, 630 (Certified Food Grade Line)\n- Aluminum: 1050, 2011, 6060/6082, 3571, 5754, 5083, 7075, 2024, Aluminum Bronze\n- Other Alloys: Brass, Bronze, Copper.\n\nFERROUS STEELS:\n- Carbon & Alloy Grades: 39NiCrMo3B, 42CrMo4B, 18NiCrMo5, 20MnCrS5, 16CrNi4, 40NiCrMo7, C45/C50 Cromato, AVP, PR80, FE 360, FE 37, C45, A105, Cast Iron\n- Tool Steels: K100, K110, K720.\n\nENGINEERING THERMOPLASTICS:\n- POM-C, PVC, PA-6, PTFE, PEEK, Polycarbonate.\n\nCDU CONSORTIUM RANGE:\n- Comprehensive industrial supplies, engineering metrology, Cutting Tools & PPE safety gear distribution.
+REV:2026-11-10T07:37:00Z
+END:VCARD
