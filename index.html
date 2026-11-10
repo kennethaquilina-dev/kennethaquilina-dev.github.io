@@ -5,33 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Terranova Industrial Supplies Ltd - Kenneth Aquilina</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background-color: #f8fafc; color: #334155; padding: 25px 15px; margin: 0; }
-        .card { background: #ffffff; max-width: 600px; margin: 0 auto; padding: 35px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 5px solid #cc1818; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; color: #334155; padding: 25px 15px; margin: 0; -webkit-font-smoothing: antialiased; }
+        .card { background: #ffffff; max-width: 600px; margin: 0 auto 50px auto; padding: 35px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 6px solid #cc1818; box-sizing: border-box; }
+        
         .header { text-align: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #e2e8f0; }
         h1 { font-size: 28px; margin: 0 0 4px 0; color: #0f172a; font-weight: 700; }
-        .title-role { font-size: 16px; color: #cc1818; font-weight: 600; margin: 0 0 8px 0; text-transform: uppercase; }
+        .title-role { font-size: 16px; color: #cc1818; font-weight: 600; margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 0.5px; }
         .subtitle { font-size: 15px; color: #475569; margin: 0; font-weight: 500; }
-        .group-tag { font-size: 12px; color: #64748b; margin-top: 4px; text-transform: uppercase; }
-        .action-dock { background: #f1f5f9; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; margin: 20px 0 30px 0; }
+        .group-tag { font-size: 12px; color: #64748b; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .action-dock { background: #f1f5f9; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; margin: 20px 0 25px 0; }
         .contact-text { font-size: 14px; color: #334155; margin-bottom: 15px; line-height: 1.5; }
         .contact-text a { color: #0284c7; text-decoration: none; font-weight: 600; }
-        .btn { display: inline-block; background-color: #cc1818; color: white !important; padding: 14px 45px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; box-shadow: 0 4px 14px rgba(204,24,24,0.25); border: none; margin-bottom: 15px; }
+        
+        .btn-container { text-align: center; margin: 10px 0; }
+        .btn { display: inline-block; background-color: #cc1818; color: white !important; padding: 14px 45px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; box-shadow: 0 4px 14px rgba(204,24,24,0.25); border: none; cursor: pointer; text-align: center; width: 80%; max-width: 300px; box-sizing: border-box; }
         .btn:hover { background-color: #a61010; }
-        .dock-links a { color: #cc1818; text-decoration: none; font-weight: bold; font-size: 13.5px; margin: 0 12px; }
-        .main-title { font-size: 16px; font-weight: 800; text-transform: uppercase; color: #cc1818; margin: 35px 0 15px 0; border-left: 4px solid #cc1818; padding-left: 12px; }
-        .grade-lbl { font-size: 13px; font-weight: 700; text-transform: uppercase; margin: 20px 0 8px 0; color: #1e293b; background: #f8fafc; padding: 6px 10px; border-radius: 4px; border-left: 3px solid #475569; }
-        .format-text { font-size: 12px; color: #64748b; font-style: italic; margin-top: -10px; margin-bottom: 12px; }
+        
+        .main-title { font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #cc1818; margin: 35px 0 15px 0; border-left: 4px solid #cc1818; padding-left: 12px; }
+        .grade-lbl { font-size: 13px; font-weight: 700; text-transform: uppercase; margin: 20px 0 8px 0; color: #1e293b; letter-spacing: 0.5px; background: #f8fafc; padding: 6px 10px; border-radius: 4px; border-left: 3px solid #475569; }
+        .format-text { font-size: 12px; color: #64748b; font-style: italic; margin-top: -10px; margin-bottom: 12px; padding-left: 2px; }
+        
         .list-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 5px 15px; margin-bottom: 15px; }
         .list-row { display: flex; padding: 10px 0; border-bottom: 1px solid #f1f5f9; align-items: flex-start; }
         .list-row:last-child { border-bottom: none; }
         .item-name { width: 140px; font-weight: 700; color: #0f172a; font-size: 13px; flex-shrink: 0; }
         .item-desc { color: #475569; font-size: 12.5px; line-height: 1.4; padding-left: 10px; }
+        
         .focus-box { background: #fffaf0; border: 1px solid #feebc8; padding: 12px 14px; border-radius: 8px; font-size: 13px; color: #c2410c; margin: 15px 0; display: flex; align-items: center; gap: 8px; line-height: 1.4; }
+        .sub-link-text { font-size: 13px; color: #64748b; margin: -6px 0 15px 2px; }
+        .sub-link-text a { color: #0284c7; text-decoration: none; font-weight: 600; }
+        
         .cdu-box .list-row { background: #fafdfb; border-bottom: 1px solid #eaf7f2; }
         .cdu-box .item-name { color: #166534; }
+        
+        /* Modern Structured Bottom Footer Area for Portal Links */
+        .card-footer { border-top: 1px solid #e2e8f0; padding-top: 25px; margin-top: 40px; text-align: center; }
+        .footer-btn { display: inline-block; background-color: #f1f5f9; border: 1px solid #cbd5e1; color: #334155 !important; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 13px; margin: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+        .footer-btn:hover { background-color: #e2e8f0; border-color: #94a3b8; }
+        .footer-btn.cdu-highlight { background-color: #f0fdf4; border-color: #bbf7d0; color: #166534 !important; }
+        .footer-btn.cdu-highlight:hover { background-color: #dcfce7; border-color: #86efac; }
     </style>
 </head>
 <body>
+
 <div class="card">
     <div class="header">
         <h1>Mr. Kenneth Aquilina</h1>
@@ -39,18 +56,20 @@
         <div class="subtitle">Terranova Industrial Supplies Ltd</div>
         <div class="group-tag">Part of the Terranova Srl Group</div>
     </div>
+    
     <div class="action-dock">
         <div class="contact-text">
             ✉️ <a href="mailto:malta@terranovasrl.it?subject=Terranova%20Industrial%20Inquiry" target="_top">malta@terranovasrl.it</a> &nbsp;|&nbsp; 📱 <a href="tel:+35699471999">+356 99471999</a>
         </div>
-        <a href="https://github.io" class="btn" target="_top">Save Contact Details</a>
-        <div class="dock-links">
-            <a href="https://terranovasrl.it" target="_blank">🌐 Corporate Website</a>
-            <a href="https://cdu.net" target="_blank">📖 CDU Catalogue</a>
+        <div class="btn-container">
+            <a href="https://github.io" class="btn" target="_top">Save Contact Details</a>
         </div>
     </div>
+    
+    <!-- DIVISION 1: NON-FERROUS METALS -->
     <div class="main-title">Non-Ferrous Metals</div>
     <div class="format-text">Formats: Round, flat, square, hexagon, angle bars, sheets, tubes, and pipes • Multiple finishes</div>
+    
     <div class="grade-lbl">Stainless Steel</div>
     <div class="list-box">
         <div class="list-row"><div class="item-name">303</div><div class="item-desc">Optimized for high-speed free-machining automatic operations.</div></div>
@@ -63,10 +82,12 @@
         <div class="list-row"><div class="item-name">440</div><div class="item-desc">High-carbon variant providing maximum rockwell wear surface hardness.</div></div>
         <div class="list-row"><div class="item-name">630</div><div class="item-desc">Precipitation hardening metallurgy designed for peak structural strength.</div></div>
     </div>
+    
     <div class="focus-box">
         <span>📌</span>
         <span><strong>Food Grade Certification:</strong> Offering an expansive inventory dedicated to certified <strong>Food Grade Pipes and Fittings</strong>.</span>
     </div>
+
     <div class="grade-lbl">Aluminum Alloys</div>
     <div class="list-box">
         <div class="list-row"><div class="item-name">Aluminum 1050</div><div class="item-desc">Pure industrial sheet with outstanding cold formability features.</div></div>
@@ -77,16 +98,19 @@
         <div class="list-row"><div class="item-name">Peraluman 5083</div><div class="item-desc">High-stress structural marine grade built for automated hull framing tasks.</div></div>
         <div class="list-row"><div class="item-name">Ergal 7075</div><div class="item-desc">Ultra-high tensile aircraft zinc-alloy matching structural steel capacities.</div></div>
         <div class="list-row"><div class="item-name">Avional 2024</div><div class="item-desc">High-yield aerospace structural matrix ideal under continuous tension load.</div></div>
-        <div class="list-row"><div class="item-name">Aluminum Bronze</div><div class="item-desc">Specialized heavy-wear engineering bronze resilient against friction resistance.</div></div>
+        <div class="list-row"><div class="item-name">Aluminum Bronze</div><div class="item-desc">Specialized heavy-wear engineering bronze resilient against high friction resistance.</div></div>
     </div>
+
     <div class="grade-lbl">Other Alloys</div>
     <div class="list-box">
         <div class="list-row"><div class="item-name">Brass</div><div class="item-desc">Optimized for precision mechanical plumbing, electrical, and turned parts.</div></div>
         <div class="list-row"><div class="item-name">Bronze</div><div class="item-desc">High-lubricity design built for low-friction bushes and guide bearings.</div></div>
         <div class="list-row"><div class="item-name">Copper</div><div class="item-desc">Unrivaled electrical conductivity profiles and pipeline configurations.</div></div>
     </div>
+    <!-- DIVISION 2: FERROUS STEELS -->
     <div class="main-title">Ferrous Steels</div>
     <div class="format-text">Formats: Round, flat, square, hexagon, angle bars, and industrial sheets</div>
+    
     <div class="grade-lbl">Carbon & Alloy Steel Grades</div>
     <div class="list-box">
         <div class="list-row"><div class="item-name">39 NiCrMo3B</div><div class="item-desc">Advanced nitriding steel balancing surface toughness with core safety.</div></div>
@@ -105,12 +129,14 @@
         <div class="list-row"><div class="item-name">A105</div><div class="item-desc">High-grade forged carbon variant standard built for heavy-duty pressure piping tasks.</div></div>
         <div class="list-row"><div class="item-name">Cast Iron</div><div class="item-desc">High-density foundry castings engineered for minimal thermal expansion loops.</div></div>
     </div>
+
     <div class="grade-lbl">Tool Steels</div>
     <div class="list-box">
         <div class="list-row"><div class="item-name">K100 (1.2080)</div><div class="item-desc">Ledeburitic high-carbon, high-chrome setup built for heavy punching dies.</div></div>
         <div class="list-row"><div class="item-name">K110 (1.2379)</div><div class="item-desc">Cold-work tooling grade offering exceptional dimensional stability traits.</div></div>
         <div class="list-row"><div class="item-name">K720 (1.2842)</div><div class="item-desc">Classic oil-hardening manganese tool steel engineered for robust toolmaking.</div></div>
     </div>
+
     <div class="main-title">Engineering Thermoplastics</div>
     <div class="format-text">Formats: Round bars and sheets • Stocked in multiple color configurations</div>
     <div class="list-box">
@@ -121,9 +147,10 @@
         <div class="list-row"><div class="item-name">PEEK</div><div class="item-desc">Extreme performance polymer maintaining stability under high thermal loads.</div></div>
         <div class="list-row"><div class="item-name">Polycarbonate</div><div class="item-desc">Transparent impact shields matching high clarity with physical protection.</div></div>
     </div>
+
     <div class="main-title">CDU Consortium Partnership</div>
-    <div class="sub-link-text">Catalogue access portal: <a href="https://cdu.net" target="_blank">https://cdu.net</a></div>
-    <div class="format-text" style="margin-top: 5px;">Complete industrial hardware supply infrastructure for mechanical machining operations</div>
+    <div class="format-text">Complete industrial hardware supply infrastructure for mechanical machining operations</div>
+    
     <div class="list-box cdu-box">
         <div class="list-row"><div class="item-name">Cutting Tools</div><div class="item-desc">High-speed cobalt drills, machine taps, milling cutters, and bandsaw blades.</div></div>
         <div class="list-row"><div class="item-name">Machine Tool Equip.</div><div class="item-desc">Fixtures, expanding collets, precision chucks, and modular machine vices.</div></div>
@@ -135,6 +162,15 @@
         <div class="list-row"><div class="item-name">Workshop Furniture</div><div class="item-desc">Ergonomic tool storage cabinets, custom heavy workbenches, and modular lockers.</div></div>
         <div class="list-row"><div class="item-name">PPE Safety Gear</div><div class="item-desc">Certified anti-accident protective site footwear, specialized gloves, and apparel.</div></div>
     </div>
+
+    <!-- CLEANED ALIGNED FOOTER AREA -->
+    <div class="card-footer">
+        <a href="https://terranovasrl.it" class="footer-btn" target="_blank">🌐 Corporate Website</a>
+        <a href="https://cdu.net" class="footer-btn cdu-highlight" target="_blank">📖 CDU Catalogue Portal</a>
+    </div>
 </div>
+
 </body>
 </html>
+
+   
