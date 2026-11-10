@@ -15,7 +15,7 @@
         .action-dock { background: #f1f5f9; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; margin: 20px 0 30px 0; }
         .contact-text { font-size: 14px; color: #334155; margin-bottom: 15px; line-height: 1.5; }
         .contact-text a { color: #0284c7; text-decoration: none; font-weight: 600; }
-        .btn { display: inline-block; background-color: #cc1818; color: white !important; padding: 14px 45px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; box-shadow: 0 4px 14px rgba(204,24,24,0.25); border: none; margin-bottom: 15px; }
+        .btn { display: inline-block; background-color: #cc1818; color: white !important; padding: 14px 45px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; box-shadow: 0 4px 14px rgba(204,24,24,0.25); border: none; margin-bottom: 15px; cursor: pointer; }
         .btn:hover { background-color: #a61010; }
         .dock-links a { color: #cc1818; text-decoration: none; font-weight: bold; font-size: 13.5px; margin: 0 12px; }
         .dock-links a:hover { text-decoration: underline; }
@@ -48,15 +48,17 @@
         <div class="contact-text">
             ✉️ <a href="mailto:malta@terranovasrl.it?subject=Terranova%20Industrial%20Inquiry" target="_top">malta@terranovasrl.it</a> &nbsp;|&nbsp; 📱 <a href="tel:+35699471999">+356 99471999</a>
         </div>
-        <a href="kenneth_aquilina.vcf" class="btn" download="kenneth_aquilina.vcf">Save Contact Details</a>
+        <!-- FIXED SMART BUTTON LINK -->
+        <a href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3AAquilina%3BKenneth%3B%3BMr.%3B%0AFN%3AMr.%20Kenneth%20Aquilina%0AORG%3ATerranova%20Industrial%20Supplies%20Ltd%3BTerranova%20Srl%20Group%0ATITLE%3AManager%0ATEL%3BTYPE%3DCELL%2CVOICE%3A%2B35699471999%0AEMAIL%3BTYPE%3DPREF%2CINTERNET%3Amalta%40terranovasrl.it%0AURL%3BTYPE%3DWORK%3Ahttps%3A%2F%2Fwww.terranovasrl.it%0ANOTE%3ANON-FERROUS%20METALS%3A%5Cn-%20Stainless%20Steel%3A%20303%2C%20304%2C%20316%2C%20321%2C%20410%2C%20420%2C%20431%2C%20440%2C%20630%20(Certified%20Food%20Grade%20Line)%5Cn-%20Aluminum%3A%201050%2C%202011%2C%206060%2F6082%2C%203571%2C%205754%2C%205083%2C%207075%2C%202024%2C%20Aluminum%20Bronze%5Cn-%20Other%20Alloys%3A%20Brass%2C%20Bronze%2C%20Copper.%5Cn%5CnFERROUS%20STEELS%3A%5Cn-%20Carbon%20%26%20Alloy%20Grades%3A%2039NiCrMo3B%2C%2042CrMo4B%2C%2018NiCrMo5%2C%2020MnCrS5%2C%2016CrNi4%2C%2040NiCrMo7%2C%20C45%2FC50%20Cromato%2C%20AVP%2C%20PR80%2C%20FE%20360%2C%20FE%2037%2C%20C45%2C%20A105%2C%20Cast%20Iron%5Cn-%20Tool%20Steels%3A%20K100%2C%20K110%2C%20K720.%5Cn%5CnENGINEERING%20THERMOPLASTICS%3A%5Cn-%20POM-C%2C%20PVC%2C%20PA-6%2C%20PTFE%2C%20PEEK%2C%20Polycarbonate.%5Cn%5CnCDU%20CONSORTIUM%20RANGE%3A%5Cn-%20Comprehensive%20industrial%20supplies%2C%20distribution.%0AREV%3A2026-11-10T14%3A10%3A00Z%0AEND%3A%2code" class="btn" download="kenneth_aquilina.vcf">Save Contact Details</a>
         <div class="dock-links">
-            <a href="https://www.terranovasrl.it" target="_blank">🌐 Corporate Website</a>
+            <a href="https://terranovasrl.it" target="_blank">🌐 Corporate Website</a>
             <a href="https://cdu.net" target="_blank">📖 CDU Catalogue</a>
         </div>
     </div>
     
+    <!-- DIVISION 1: NON-FERROUS METALS -->
     <div class="main-title">Non-Ferrous Metals</div>
-    <div class="format-text">Available Formats: Round, flat, square, hexagon, angle bars, sheets, tubes, and pipes • Multiple finishes</div>
+    <div class="format-text">Formats: Round, flat, square, hexagon, angle bars, sheets, tubes, and pipes • Multiple finishes</div>
     
     <div class="grade-lbl">Stainless Steel</div>
     <div class="list-box">
@@ -92,67 +94,3 @@
     <div class="grade-lbl">Other Alloys</div>
     <div class="list-box">
         <div class="list-row"><div class="item-name">Brass</div><div class="item-desc">Optimized for precision mechanical plumbing, electrical, and turned parts.</div></div>
-        <div class="list-row"><div class="item-name">Bronze</div><div class="item-desc">High-lubricity design built for low-friction bushes and guide bearings.</div></div>
-        <div class="list-row"><div class="item-name">Copper</div><div class="item-desc">Unrivaled electrical conductivity profiles and pipeline configurations.</div></div>
-    </div>
-    <!-- DIVISION 2: FERROUS STEELS -->
-    <div class="main-title">Ferrous Steels</div>
-    <div class="format-text">Available Formats: Round, flat, square, hexagon, angle bars, and industrial sheets</div>
-    
-    <div class="grade-lbl">Carbon & Alloy Steel Grades</div>
-    <div class="list-box">
-        <div class="list-row"><div class="item-name">39 NiCrMo3B</div><div class="item-desc">Advanced nitriding steel balancing surface toughness with core safety.</div></div>
-        <div class="list-row"><div class="item-name">42 CrMo4B</div><div class="item-desc">Heavy-duty machinery structural steel built for extreme torque load tasks.</div></div>
-        <div class="list-row"><div class="item-name">18 NiCrMo5</div><div class="item-desc">Premium alloy engineered for reliable core case hardening depth execution.</div></div>
-        <div class="list-row"><div class="item-name">20 MnCrS5</div><div class="item-desc">Specialized machinery grade built for precise transmission gear processing.</div></div>
-        <div class="list-row"><div class="item-name">16 CrNi4</div><div class="item-desc">High-performance structural steel built for standard carburizing tasks.</div></div>
-        <div class="list-row"><div class="item-name">40 NiCrMo7</div><div class="item-desc">Premium grade built for uniform hardening output across thick machinery walls.</div></div>
-        <div class="list-row"><div class="item-name">C45 Cromato</div><div class="item-desc">Hard chrome-plated carbon execution matched for hydraulic piston rod lines.</div></div>
-        <div class="list-row"><div class="item-name">C50 Temprato cr.</div><div class="item-desc">Induction hardened variant engineered to resist ongoing mechanical friction.</div></div>
-        <div class="list-row"><div class="item-name">AVP (11SMnPb37)</div><div class="item-desc">Leaded free-cutting steel built for smooth automated lathe machining lines.</div></div>
-        <div class="list-row"><div class="item-name">PR80 (36SMnPb14)</div><div class="item-desc">High-tensile leaded carbon variant built for sharp automated bar profiling.</div></div>
-        <div class="list-row"><div class="item-name">FE 360</div><div class="item-desc">Universally reliable structural mild framing and engineering base layouts.</div></div>
-        <div class="list-row"><div class="item-name">FE 37</div><div class="item-desc">Clean, mild commercial base structural element optimized for easy welding.</div></div>
-        <div class="list-row"><div class="item-name">C45</div><div class="item-desc">Medium carbon archetype ideal for general industrial machinery components.</div></div>
-        <div class="list-row"><div class="item-name">A105</div><div class="item-desc">High-grade forged carbon variant standard built for heavy-duty pressure piping tasks.</div></div>
-        <div class="list-row"><div class="item-name">Cast Iron</div><div class="item-desc">High-density foundry castings engineered for minimal thermal expansion loops.</div></div>
-    </div>
-
-    <div class="grade-lbl">Tool Steels</div>
-    <div class="list-box">
-        <div class="list-row"><div class="item-name">K100 (1.2080)</div><div class="item-desc">Ledeburitic high-carbon, high-chrome setup built for heavy punching dies.</div></div>
-        <div class="list-row"><div class="item-name">K110 (1.2379)</div><div class="item-desc">Cold-work tooling grade offering exceptional dimensional stability traits.</div></div>
-        <div class="list-row"><div class="item-name">K720 (1.2842)</div><div class="item-desc">Classic oil-hardening manganese tool steel engineered for robust toolmaking.</div></div>
-    </div>
-
-    <!-- DIVISION 3: THERMOPLASTICS -->
-    <div class="main-title">Engineering Thermoplastics</div>
-    <div class="format-text">Available Formats: Round bars and sheets • Stocked in multiple color configurations</div>
-    <div class="list-box">
-        <div class="list-row"><div class="item-name">POM-C</div><div class="item-desc">Acetal copolymer optimized for low dimensional friction and ultra-stable wear.</div></div>
-        <div class="list-row"><div class="item-name">PVC</div><div class="item-desc">High rigid density polymer constructed for industrial chemical tank systems.</div></div>
-        <div class="list-row"><div class="item-name">PA-6</div><div class="item-desc">Cast engineering nylon handling high structural shock and structural vibrations.</div></div>
-        <div class="list-row"><div class="item-name">PTFE</div><div class="item-desc">Pure high-temperature Teflon barrier with inert non-stick properties.</div></div>
-        <div class="list-row"><div class="item-name">PEEK</div><div class="item-desc">Extreme performance polymer maintaining stability under high thermal loads.</div></div>
-        <div class="list-row"><div class="item-name">Polycarbonate</div><div class="item-desc">Transparent impact shields matching high clarity with physical protection.</div></div>
-    </div>
-
-    <!-- DIVISION 4: CDU CONSORTIUM -->
-    <div class="main-title">CDU Consortium Partnership</div>
-    <div class="sub-link-text" style="padding-left: 12px; margin-bottom: 5px;">Catalogue access portal: <a href="https://cdu.net" target="_blank">https://cdu.net</a></div>
-    <div class="format-text" style="margin-top: 5px;">Complete industrial hardware supply infrastructure for mechanical machining operations</div>
-    <div class="list-box cdu-box">
-        <div class="list-row"><div class="item-name">Cutting Tools</div><div class="item-desc">High-speed cobalt drills, machine taps, milling cutters, and bandsaw blades.</div></div>
-        <div class="list-row"><div class="item-name">Machine Tool Equip.</div><div class="item-desc">Fixtures, expanding collets, precision chucks, and modular machine vices.</div></div>
-        <div class="list-row"><div class="item-name">Metrology & Measuring</div><div class="item-desc">Electronic digital calipers, depth micrometers, and granitic metrology benches.</div></div>
-        <div class="list-row"><div class="item-name">Premium Abrasives</div><div class="item-desc">Fiber grinding discs, diamond flap wheels, and structural steel wire brushes.</div></div>
-        <div class="list-row"><div class="item-name">Industrial Chemicals</div><div class="item-desc">Anaerobic threadlockers, high-bonding adhesives, and specialized cooling fluids.</div></div>
-        <div class="list-row"><div class="item-name">Welding Solutions</div><div class="item-desc">Advanced manual welding setups, tables, and digital Welding 4.0 XNET networks.</div></div>
-        <div class="list-row"><div class="item-name">Rotopoint Automation</div><div class="item-desc">Secure computer-vended tool storage carousels for inventory tracking logs.</div></div>
-        <div class="list-row"><div class="item-name">Workshop Furniture</div><div class="item-desc">Ergonomic tool storage cabinets, custom heavy workbenches, and modular lockers.</div></div>
-        <div class="list-row"><div class="item-name">PPE Safety Gear</div><div class="item-desc">Certified anti-accident protective site footwear, specialized gloves, and apparel.</div></div>
-    </div>
-</div>
-
-</body>
-</html>
