@@ -2,36 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Terranova Industrial Supplies Ltd - Kenneth Aquilina</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background-color: #f8fafc; color: #334155; padding: 20px 10px; margin: 0; }
-        .card { background: #ffffff; max-width: 580px; margin: 0 auto; padding: 30px 20px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 6px solid #cc1818; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background-color: #f8fafc; color: #334155; padding: 25px 15px; margin: 0; }
+        .card { background: #ffffff; max-width: 600px; margin: 0 auto; padding: 35px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 5px solid #cc1818; box-sizing: border-box; }
         .header { text-align: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #e2e8f0; }
-        h1 { font-size: 26px; margin: 0 0 4px 0; color: #0f172a; font-weight: 700; }
-        .title-role { font-size: 15px; color: #cc1818; font-weight: 600; margin: 0 0 6px 0; text-transform: uppercase; }
-        .subtitle { font-size: 14.5px; color: #475569; margin: 0; font-weight: 500; }
-        .group-tag { font-size: 11.5px; color: #64748b; margin-top: 3px; text-transform: uppercase; }
-        .action-dock { background: #f1f5f9; border: 1px solid #e2e8f0; padding: 20px 15px; border-radius: 12px; text-align: center; margin: 15px 0 25px 0; }
-        .contact-text { font-size: 14px; color: #1e293b; margin-bottom: 15px; font-weight: 500; }
+        h1 { font-size: 28px; margin: 0 0 4px 0; color: #0f172a; font-weight: 700; }
+        .title-role { font-size: 16px; color: #cc1818; font-weight: 600; margin: 0 0 8px 0; text-transform: uppercase; }
+        .subtitle { font-size: 15px; color: #475569; margin: 0; font-weight: 500; }
+        .group-tag { font-size: 12px; color: #64748b; margin-top: 4px; text-transform: uppercase; }
+        .action-dock { background: #f1f5f9; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; margin: 20px 0 30px 0; }
+        .contact-text { font-size: 14px; color: #334155; margin-bottom: 15px; line-height: 1.5; }
         .contact-text a { color: #0284c7; text-decoration: none; font-weight: 600; }
-        .btn-container { text-align: center; margin: 15px 0; }
-        .btn { display: inline-block; background-color: #cc1818; color: #ffffff !important; padding: 14px 40px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 15px; box-shadow: 0 4px 14px rgba(204,24,24,0.25); border: none; }
-        .dock-links a { color: #cc1818; text-decoration: none; font-weight: 700; font-size: 13.5px; margin: 0 10px; }
-        .main-title { font-size: 16px; font-weight: 800; text-transform: uppercase; color: #cc1818; margin: 30px 0 12px 0; border-left: 4px solid #cc1818; padding-left: 10px; }
-        .grade-lbl { font-size: 12.5px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px 0; color: #1e293b; background: #f8fafc; padding: 6px 10px; border-radius: 4px; border-left: 3px solid #475569; }
-        .format-text { font-size: 11.5px; color: #64748b; font-style: italic; margin-top: -6px; margin-bottom: 12px; }
-        .list-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 5px 12px; margin-bottom: 15px; }
-        .list-row { display: block; padding: 10px 0; border-bottom: 1px solid #f1f5f9; }
+        .btn { display: inline-block; background-color: #cc1818; color: white !important; padding: 14px 45px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; box-shadow: 0 4px 14px rgba(204,24,24,0.25); border: none; margin-bottom: 15px; }
+        .btn:hover { background-color: #a61010; }
+        .dock-links a { color: #cc1818; text-decoration: none; font-weight: bold; font-size: 13.5px; margin: 0 12px; }
+        .main-title { font-size: 16px; font-weight: 800; text-transform: uppercase; color: #cc1818; margin: 35px 0 15px 0; border-left: 4px solid #cc1818; padding-left: 12px; }
+        .grade-lbl { font-size: 13px; font-weight: 700; text-transform: uppercase; margin: 20px 0 8px 0; color: #1e293b; background: #f8fafc; padding: 6px 10px; border-radius: 4px; border-left: 3px solid #475569; }
+        .format-text { font-size: 12px; color: #64748b; font-style: italic; margin-top: -10px; margin-bottom: 12px; }
+        .list-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 5px 15px; margin-bottom: 15px; }
+        .list-row { display: flex; padding: 10px 0; border-bottom: 1px solid #f1f5f9; align-items: flex-start; }
         .list-row:last-child { border-bottom: none; }
-        .item-name { font-weight: 700; color: #cc1818; font-size: 13px; margin-bottom: 3px; display: block; }
-        .item-desc { color: #475569; font-size: 12.5px; line-height: 1.4; display: block; }
-        .focus-box { background: #fffaf0; border: 1px solid #feebc8; padding: 12px; border-radius: 8px; font-size: 12.5px; color: #c2410c; margin: 15px 0; line-height: 1.4; }
-        .sub-link-text { font-size: 12.5px; color: #64748b; margin: -6px 0 12px 2px; }
-        .sub-link-text a { color: #0284c7; text-decoration: underline; font-weight: 600; }
+        .item-name { width: 140px; font-weight: 700; color: #0f172a; font-size: 13px; flex-shrink: 0; }
+        .item-desc { color: #475569; font-size: 12.5px; line-height: 1.4; padding-left: 10px; }
+        .focus-box { background: #fffaf0; border: 1px solid #feebc8; padding: 12px 14px; border-radius: 8px; font-size: 13px; color: #c2410c; margin: 15px 0; display: flex; align-items: center; gap: 8px; line-height: 1.4; }
+        .cdu-box .list-row { background: #fafdfb; border-bottom: 1px solid #eaf7f2; }
         .cdu-box .item-name { color: #166534; }
-        .cdu-box .list-row { border-bottom: 1px solid #eaf7f2; }
-        .cdu-box .list-row:last-child { border-bottom: none; }
     </style>
 </head>
 <body>
@@ -44,11 +41,9 @@
     </div>
     <div class="action-dock">
         <div class="contact-text">
-            ✉️ <a href="mailto:malta@terranovasrl.it?subject=Terranova%20Industrial%20Inquiry">malta@terranovasrl.it</a> &nbsp;|&nbsp; 📱 <a href="tel:+35699471999">+356 99471999</a>
+            ✉️ <a href="mailto:malta@terranovasrl.it?subject=Terranova%20Industrial%20Inquiry" target="_top">malta@terranovasrl.it</a> &nbsp;|&nbsp; 📱 <a href="tel:+35699471999">+356 99471999</a>
         </div>
-        <div class="btn-container">
-            <a href="https://github.io" class="btn" target="_top">Save Contact Details</a>
-        </div>
+        <a href="https://github.io" class="btn" target="_top">Save Contact Details</a>
         <div class="dock-links">
             <a href="https://terranovasrl.it" target="_blank">🌐 Corporate Website</a>
             <a href="https://cdu.net" target="_blank">📖 CDU Catalogue</a>
@@ -58,43 +53,88 @@
     <div class="format-text">Formats: Round, flat, square, hexagon, angle bars, sheets, tubes, and pipes • Multiple finishes</div>
     <div class="grade-lbl">Stainless Steel</div>
     <div class="list-box">
-        <div class="list-row"><span class="item-name">303</span><span class="item-desc">Optimized for high-speed free-machining automatic operations.</span></div>
-        <div class="list-row"><span class="item-name">304</span><span class="item-desc">Standard general-purpose grade with excellent corrosion resistance.</span></div>
-        <div class="list-row"><span class="item-name">316</span><span class="item-desc">Marine-grade composition protecting against high-salinity pitting.</span></div>
-        <div class="list-row"><span class="item-name">321</span><span class="item-desc">Titanium-stabilized for structural high-temperature service lines.</span></div>
-        <div class="list-row"><span class="item-name">410</span><span class="item-desc">Hardenable martensitic steel for core structural mechanical elements.</span></div>
-        <div class="list-row"><span class="item-name">420</span><span class="item-desc">Hardened tooling grade optimized specifically for molds and blades.</span></div>
-        <div class="list-row"><span class="item-name">431</span><span class="item-desc">High-tensile variant offering supreme core mechanical resistance values.</span></div>
-        <div class="list-row"><span class="item-name">440</span><span class="item-desc">High-carbon variant providing maximum rockwell wear surface hardness.</span></div>
-        <div class="list-row"><span class="item-name">630</span><span class="item-desc">Precipitation hardening metallurgy designed for peak structural strength.</span></div>
+        <div class="list-row"><div class="item-name">303</div><div class="item-desc">Optimized for high-speed free-machining automatic operations.</div></div>
+        <div class="list-row"><div class="item-name">304</div><div class="item-desc">Standard general-purpose grade with excellent corrosion resistance.</div></div>
+        <div class="list-row"><div class="item-name">316</div><div class="item-desc">Marine-grade composition protecting against high-salinity pitting.</div></div>
+        <div class="list-row"><div class="item-name">321</div><div class="item-desc">Titanium-stabilized for structural high-temperature service lines.</div></div>
+        <div class="list-row"><div class="item-name">410</div><div class="item-desc">Hardenable martensitic steel for core structural mechanical elements.</div></div>
+        <div class="list-row"><div class="item-name">420</div><div class="item-desc">Hardened tooling grade optimized specifically for molds and blades.</div></div>
+        <div class="list-row"><div class="item-name">431</div><div class="item-desc">High-tensile variant offering supreme core mechanical resistance values.</div></div>
+        <div class="list-row"><div class="item-name">440</div><div class="item-desc">High-carbon variant providing maximum rockwell wear surface hardness.</div></div>
+        <div class="list-row"><div class="item-name">630</div><div class="item-desc">Precipitation hardening metallurgy designed for peak structural strength.</div></div>
     </div>
     <div class="focus-box">
-        ⚠️ <strong>Food Grade Focus:</strong> Offering an expansive industrial specialty inventory fully dedicated to certified <strong>Food Grade Pipes and Fittings</strong>.
+        <span>📌</span>
+        <span><strong>Food Grade Certification:</strong> Offering an expansive inventory dedicated to certified <strong>Food Grade Pipes and Fittings</strong>.</span>
     </div>
     <div class="grade-lbl">Aluminum Alloys</div>
     <div class="list-box">
-        <div class="list-row"><span class="item-name">Aluminum 1050</span><span class="item-desc">Pure industrial sheet with outstanding cold formability features.</span></div>
-        <div class="list-row"><span class="item-name">Aluminum 2011</span><span class="item-desc">High-speed turning copper-alloy explicitly built for automatic lathes.</span></div>
-        <div class="list-row"><span class="item-name">6060 / 6082</span><span class="item-desc">Premium profiles engineered for architectural structural framing setups.</span></div>
-        <div class="list-row"><span class="item-name">Aluminum 3571</span><span class="item-desc">Highly reliable configuration variant for unique industrial metallurgy fields.</span></div>
-        <div class="list-row"><span class="item-name">Peraluman 5754</span><span class="item-desc">Certified marine-grade atmospheric shield displaying great weldability.</span></div>
-        <div class="list-row"><span class="item-name">Peraluman 5083</span><span class="item-desc">High-stress structural marine grade built for automated hull framing tasks.</span></div>
-        <div class="list-row"><span class="item-name">Ergal 7075</span><span class="item-desc">Ultra-high tensile aircraft zinc-alloy matching structural steel capacities.</span></div>
-        <div class="list-row"><span class="item-name">Avional 2024</span><span class="item-desc">High-yield aerospace structural matrix ideal under continuous tension load.</span></div>
-        <div class="list-row"><span class="item-name">Aluminum Bronze</span><span class="item-desc">Specialized heavy-wear engineering bronze resilient against friction resistance.</span></div>
+        <div class="list-row"><div class="item-name">Aluminum 1050</div><div class="item-desc">Pure industrial sheet with outstanding cold formability features.</div></div>
+        <div class="list-row"><div class="item-name">Aluminum 2011</div><div class="item-desc">High-speed turning copper-alloy explicitly built for automatic lathes.</div></div>
+        <div class="list-row"><div class="item-name">6060 / 6082</div><div class="item-desc">Premium profiles engineered for architectural structural framing setups.</div></div>
+        <div class="list-row"><div class="item-name">Aluminum 3571</div><div class="item-desc">Highly reliable configuration variant for unique industrial metallurgy fields.</div></div>
+        <div class="list-row"><div class="item-name">Peraluman 5754</div><div class="item-desc">Certified marine-grade atmospheric shield displaying great weldability.</div></div>
+        <div class="list-row"><div class="item-name">Peraluman 5083</div><div class="item-desc">High-stress structural marine grade built for automated hull framing tasks.</div></div>
+        <div class="list-row"><div class="item-name">Ergal 7075</div><div class="item-desc">Ultra-high tensile aircraft zinc-alloy matching structural steel capacities.</div></div>
+        <div class="list-row"><div class="item-name">Avional 2024</div><div class="item-desc">High-yield aerospace structural matrix ideal under continuous tension load.</div></div>
+        <div class="list-row"><div class="item-name">Aluminum Bronze</div><div class="item-desc">Specialized heavy-wear engineering bronze resilient against friction resistance.</div></div>
     </div>
     <div class="grade-lbl">Other Alloys</div>
     <div class="list-box">
-        <div class="list-row"><span class="item-name">Brass</span><span class="item-desc">Optimized for precision mechanical plumbing, electrical, and turned parts.</span></div>
-        <div class="list-row"><span class="item-name">Bronze</span><span class="item-desc">High-lubricity design built for low-friction bushes and guide bearings.</span></div>
-        <div class="list-row"><span class="item-name">Copper</span><span class="item-desc">Unrivaled electrical conductivity profiles and pipeline configurations.</span></div>
+        <div class="list-row"><div class="item-name">Brass</div><div class="item-desc">Optimized for precision mechanical plumbing, electrical, and turned parts.</div></div>
+        <div class="list-row"><div class="item-name">Bronze</div><div class="item-desc">High-lubricity design built for low-friction bushes and guide bearings.</div></div>
+        <div class="list-row"><div class="item-name">Copper</div><div class="item-desc">Unrivaled electrical conductivity profiles and pipeline configurations.</div></div>
     </div>
     <div class="main-title">Ferrous Steels</div>
     <div class="format-text">Formats: Round, flat, square, hexagon, angle bars, and industrial sheets</div>
     <div class="grade-lbl">Carbon & Alloy Steel Grades</div>
     <div class="list-box">
-        <div class="list-row"><span class="item-name">39 NiCrMo3B</span><span class="item-desc">Advanced nitriding steel balancing surface toughness with core safety.</span></div>
-        <div class="list-row"><span class="item-name">42 CrMo4B</span><span class="item-desc">Heavy-duty machinery structural steel built for extreme torque load tasks.</span></div>
-        <div class="list-row"><span class="item-name">18 NiCrMo5</span><span class="item-desc">Premium alloy engineered for reliable core case hardening depth execution.</span></div>
-        <div class="list-row"><span class="item-name">20 MnCrS5</span><span class="item-desc">Specialized machinery grade built for precise transmission gear processing.</span></div>
-        <div class="list-row"><span class="item-name">16 CrNi4</span><span class="item-desc">High-performance structural steel built for standard carburizing tasks.</span></div>
+        <div class="list-row"><div class="item-name">39 NiCrMo3B</div><div class="item-desc">Advanced nitriding steel balancing surface toughness with core safety.</div></div>
+        <div class="list-row"><div class="item-name">42 CrMo4B</div><div class="item-desc">Heavy-duty machinery structural steel built for extreme torque load tasks.</div></div>
+        <div class="list-row"><div class="item-name">18 NiCrMo5</div><div class="item-desc">Premium alloy engineered for reliable core case hardening depth execution.</div></div>
+        <div class="list-row"><div class="item-name">20 MnCrS5</div><div class="item-desc">Specialized machinery grade built for precise transmission gear processing.</div></div>
+        <div class="list-row"><div class="item-name">16 CrNi4</div><div class="item-desc">High-performance structural steel built for standard carburizing tasks.</div></div>
+        <div class="list-row"><div class="item-name">40 NiCrMo7</div><div class="item-desc">Premium grade built for uniform hardening output across thick machinery walls.</div></div>
+        <div class="list-row"><div class="item-name">C45 Cromato</div><div class="item-desc">Hard chrome-plated carbon execution matched for hydraulic piston rod lines.</div></div>
+        <div class="list-row"><div class="item-name">C50 Temprato cr.</div><div class="item-desc">Induction hardened variant engineered to resist ongoing mechanical friction.</div></div>
+        <div class="list-row"><div class="item-name">AVP (11SMnPb37)</div><div class="item-desc">Leaded free-cutting steel built for smooth automated lathe machining lines.</div></div>
+        <div class="list-row"><div class="item-name">PR80 (36SMnPb14)</div><div class="item-desc">High-tensile leaded carbon variant built for sharp automated bar profiling.</div></div>
+        <div class="list-row"><div class="item-name">FE 360</div><div class="item-desc">Universally reliable structural mild framing and engineering base layouts.</div></div>
+        <div class="list-row"><div class="item-name">FE 37</div><div class="item-desc">Clean, mild commercial base structural element optimized for easy welding.</div></div>
+        <div class="list-row"><div class="item-name">C45</div><div class="item-desc">Medium carbon archetype ideal for general industrial machinery components.</div></div>
+        <div class="list-row"><div class="item-name">A105</div><div class="item-desc">High-grade forged carbon variant standard built for heavy-duty pressure piping tasks.</div></div>
+        <div class="list-row"><div class="item-name">Cast Iron</div><div class="item-desc">High-density foundry castings engineered for minimal thermal expansion loops.</div></div>
+    </div>
+    <div class="grade-lbl">Tool Steels</div>
+    <div class="list-box">
+        <div class="list-row"><div class="item-name">K100 (1.2080)</div><div class="item-desc">Ledeburitic high-carbon, high-chrome setup built for heavy punching dies.</div></div>
+        <div class="list-row"><div class="item-name">K110 (1.2379)</div><div class="item-desc">Cold-work tooling grade offering exceptional dimensional stability traits.</div></div>
+        <div class="list-row"><div class="item-name">K720 (1.2842)</div><div class="item-desc">Classic oil-hardening manganese tool steel engineered for robust toolmaking.</div></div>
+    </div>
+    <div class="main-title">Engineering Thermoplastics</div>
+    <div class="format-text">Formats: Round bars and sheets • Stocked in multiple color configurations</div>
+    <div class="list-box">
+        <div class="list-row"><div class="item-name">POM-C</div><div class="item-desc">Acetal copolymer optimized for low dimensional friction and ultra-stable wear.</div></div>
+        <div class="list-row"><div class="item-name">PVC</div><div class="item-desc">High rigid density polymer constructed for industrial chemical tank systems.</div></div>
+        <div class="list-row"><div class="item-name">PA-6</div><div class="item-desc">Cast engineering nylon handling high structural shock and structural vibrations.</div></div>
+        <div class="list-row"><div class="item-name">PTFE</div><div class="item-desc">Pure high-temperature Teflon barrier with inert non-stick properties.</div></div>
+        <div class="list-row"><div class="item-name">PEEK</div><div class="item-desc">Extreme performance polymer maintaining stability under high thermal loads.</div></div>
+        <div class="list-row"><div class="item-name">Polycarbonate</div><div class="item-desc">Transparent impact shields matching high clarity with physical protection.</div></div>
+    </div>
+    <div class="main-title">CDU Consortium Partnership</div>
+    <div class="sub-link-text">Catalogue access portal: <a href="https://cdu.net" target="_blank">https://cdu.net</a></div>
+    <div class="format-text" style="margin-top: 5px;">Complete industrial hardware supply infrastructure for mechanical machining operations</div>
+    <div class="list-box cdu-box">
+        <div class="list-row"><div class="item-name">Cutting Tools</div><div class="item-desc">High-speed cobalt drills, machine taps, milling cutters, and bandsaw blades.</div></div>
+        <div class="list-row"><div class="item-name">Machine Tool Equip.</div><div class="item-desc">Fixtures, expanding collets, precision chucks, and modular machine vices.</div></div>
+        <div class="list-row"><div class="item-name">Metrology & Measuring</div><div class="item-desc">Electronic digital calipers, depth micrometers, and granitic metrology benches.</div></div>
+        <div class="list-row"><div class="item-name">Premium Abrasives</div><div class="item-desc">Fiber grinding discs, diamond flap wheels, and structural steel wire brushes.</div></div>
+        <div class="list-row"><div class="item-name">Industrial Chemicals</div><div class="item-desc">Anaerobic threadlockers, high-bonding adhesives, and specialized cooling fluids.</div></div>
+        <div class="list-row"><div class="item-name">Welding Solutions</div><div class="item-desc">Advanced manual welding setups, tables, and digital Welding 4.0 XNET networks.</div></div>
+        <div class="list-row"><div class="item-name">Rotopoint Automation</div><div class="item-desc">Secure computer-vended tool storage carousels for inventory tracking logs.</div></div>
+        <div class="list-row"><div class="item-name">Workshop Furniture</div><div class="item-desc">Ergonomic tool storage cabinets, custom heavy workbenches, and modular lockers.</div></div>
+        <div class="list-row"><div class="item-name">PPE Safety Gear</div><div class="item-desc">Certified anti-accident protective site footwear, specialized gloves, and apparel.</div></div>
+    </div>
+</div>
+</body>
+</html>
