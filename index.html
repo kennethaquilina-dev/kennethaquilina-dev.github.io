@@ -2,36 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terranova Industrial Supplies Ltd - Kenneth Aquilina</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; color: #334155; padding: 20px 10px; margin: 0; -webkit-font-smoothing: antialiased; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background-color: #f8fafc; color: #334155; padding: 20px 10px; margin: 0; }
         .card { background: #ffffff; max-width: 580px; margin: 0 auto; padding: 30px 20px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 6px solid #cc1818; box-sizing: border-box; }
         .header { text-align: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #e2e8f0; }
         h1 { font-size: 26px; margin: 0 0 4px 0; color: #0f172a; font-weight: 700; }
-        .title-role { font-size: 15px; color: #cc1818; font-weight: 600; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 0.5px; }
+        .title-role { font-size: 15px; color: #cc1818; font-weight: 600; margin: 0 0 6px 0; text-transform: uppercase; }
         .subtitle { font-size: 14.5px; color: #475569; margin: 0; font-weight: 500; }
-        .group-tag { font-size: 11.5px; color: #64748b; margin-top: 3px; text-transform: uppercase; letter-spacing: 1px; }
+        .group-tag { font-size: 11.5px; color: #64748b; margin-top: 3px; text-transform: uppercase; }
         .action-dock { background: #f1f5f9; border: 1px solid #e2e8f0; padding: 20px 15px; border-radius: 12px; text-align: center; margin: 15px 0 25px 0; }
         .contact-text { font-size: 14px; color: #1e293b; margin-bottom: 15px; font-weight: 500; }
         .contact-text a { color: #0284c7; text-decoration: none; font-weight: 600; }
-        .btn-container { text-align: center; margin: 15px 0; display: block; width: 100%; }
-        .btn { display: inline-block; background-color: #cc1818; color: #ffffff !important; padding: 14px 40px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 15px; box-shadow: 0 4px 14px rgba(204,24,24,0.25); border: none; width: 85%; max-width: 320px; box-sizing: border-box; text-align: center; }
-        .btn:hover { background-color: #a61010; }
-        .dock-links { display: block; text-align: center; margin-top: 15px; padding-top: 5px; }
-        .dock-links a { color: #cc1818; text-decoration: none; font-weight: 700; font-size: 13.5px; margin: 0 10px; display: inline-block; }
-        .dock-links a:hover { text-decoration: underline; }
-        .main-title { font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #cc1818; margin: 30px 0 12px 0; border-left: 4px solid #cc1818; padding-left: 10px; clear: both; }
-        .grade-lbl { font-size: 12.5px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px 0; color: #1e293b; letter-spacing: 0.5px; background: #f8fafc; padding: 6px 10px; border-radius: 4px; border-left: 3px solid #475569; clear: both; }
-        .format-text { font-size: 11.5px; color: #64748b; font-style: italic; margin-top: -6px; margin-bottom: 12px; padding-left: 2px; }
-        .list-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 5px 12px; margin-bottom: 15px; box-shadow: 0 1px 2px rgba(0,0,0,0.01); }
-        .list-row { display: block; padding: 10px 0; border-bottom: 1px solid #f1f5f9; width: 100%; box-sizing: border-box; }
+        .btn-container { text-align: center; margin: 15px 0; }
+        .btn { display: inline-block; background-color: #cc1818; color: #ffffff !important; padding: 14px 40px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 15px; box-shadow: 0 4px 14px rgba(204,24,24,0.25); border: none; }
+        .dock-links a { color: #cc1818; text-decoration: none; font-weight: 700; font-size: 13.5px; margin: 0 10px; }
+        .main-title { font-size: 16px; font-weight: 800; text-transform: uppercase; color: #cc1818; margin: 30px 0 12px 0; border-left: 4px solid #cc1818; padding-left: 10px; }
+        .grade-lbl { font-size: 12.5px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px 0; color: #1e293b; background: #f8fafc; padding: 6px 10px; border-radius: 4px; border-left: 3px solid #475569; }
+        .format-text { font-size: 11.5px; color: #64748b; font-style: italic; margin-top: -6px; margin-bottom: 12px; }
+        .list-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 5px 12px; margin-bottom: 15px; }
+        .list-row { display: block; padding: 10px 0; border-bottom: 1px solid #f1f5f9; }
         .list-row:last-child { border-bottom: none; }
-        .item-name { font-weight: 700; color: #cc1818; font-size: 13px; margin-bottom: 3px; display: block; text-transform: uppercase; letter-spacing: 0.3px; }
+        .item-name { font-weight: 700; color: #cc1818; font-size: 13px; margin-bottom: 3px; display: block; }
         .item-desc { color: #475569; font-size: 12.5px; line-height: 1.4; display: block; }
-        .focus-box { background: #fffaf0; border: 1px solid #feebc8; padding: 12px; border-radius: 8px; font-size: 12.5px; color: #c2410c; margin: 15px 0; line-height: 1.4; box-sizing: border-box; }
+        .focus-box { background: #fffaf0; border: 1px solid #feebc8; padding: 12px; border-radius: 8px; font-size: 12.5px; color: #c2410c; margin: 15px 0; line-height: 1.4; }
         .sub-link-text { font-size: 12.5px; color: #64748b; margin: -6px 0 12px 2px; }
-        .sub-link-text a { color: #0284c7; text-decoration: none; font-weight: 600; text-decoration: underline; }
+        .sub-link-text a { color: #0284c7; text-decoration: underline; font-weight: 600; }
         .cdu-box .item-name { color: #166534; }
         .cdu-box .list-row { border-bottom: 1px solid #eaf7f2; }
         .cdu-box .list-row:last-child { border-bottom: none; }
@@ -50,7 +47,7 @@
             ✉️ <a href="mailto:malta@terranovasrl.it?subject=Terranova%20Industrial%20Inquiry">malta@terranovasrl.it</a> &nbsp;|&nbsp; 📱 <a href="tel:+35699471999">+356 99471999</a>
         </div>
         <div class="btn-container">
-            <a href="https://github.io" class="btn">Save Contact Details</a>
+            <a href="https://github.io" class="btn" target="_top">Save Contact Details</a>
         </div>
         <div class="dock-links">
             <a href="https://terranovasrl.it" target="_blank">🌐 Corporate Website</a>
@@ -84,7 +81,7 @@
         <div class="list-row"><span class="item-name">Peraluman 5083</span><span class="item-desc">High-stress structural marine grade built for automated hull framing tasks.</span></div>
         <div class="list-row"><span class="item-name">Ergal 7075</span><span class="item-desc">Ultra-high tensile aircraft zinc-alloy matching structural steel capacities.</span></div>
         <div class="list-row"><span class="item-name">Avional 2024</span><span class="item-desc">High-yield aerospace structural matrix ideal under continuous tension load.</span></div>
-        <div class="list-row"><span class="item-name">Aluminum Bronze</span><span class="item-desc">Specialized heavy-wear engineering bronze resilient against high friction resistance.</span></div>
+        <div class="list-row"><span class="item-name">Aluminum Bronze</span><span class="item-desc">Specialized heavy-wear engineering bronze resilient against friction resistance.</span></div>
     </div>
     <div class="grade-lbl">Other Alloys</div>
     <div class="list-box">
@@ -92,9 +89,12 @@
         <div class="list-row"><span class="item-name">Bronze</span><span class="item-desc">High-lubricity design built for low-friction bushes and guide bearings.</span></div>
         <div class="list-row"><span class="item-name">Copper</span><span class="item-desc">Unrivaled electrical conductivity profiles and pipeline configurations.</span></div>
     </div>
-    <!-- DIVISION 2: FERROUS STEELS -->
     <div class="main-title">Ferrous Steels</div>
     <div class="format-text">Formats: Round, flat, square, hexagon, angle bars, and industrial sheets</div>
     <div class="grade-lbl">Carbon & Alloy Steel Grades</div>
     <div class="list-box">
         <div class="list-row"><span class="item-name">39 NiCrMo3B</span><span class="item-desc">Advanced nitriding steel balancing surface toughness with core safety.</span></div>
+        <div class="list-row"><span class="item-name">42 CrMo4B</span><span class="item-desc">Heavy-duty machinery structural steel built for extreme torque load tasks.</span></div>
+        <div class="list-row"><span class="item-name">18 NiCrMo5</span><span class="item-desc">Premium alloy engineered for reliable core case hardening depth execution.</span></div>
+        <div class="list-row"><span class="item-name">20 MnCrS5</span><span class="item-desc">Specialized machinery grade built for precise transmission gear processing.</span></div>
+        <div class="list-row"><span class="item-name">16 CrNi4</span><span class="item-desc">High-performance structural steel built for standard carburizing tasks.</span></div>
