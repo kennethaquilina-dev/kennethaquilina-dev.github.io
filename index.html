@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,45 +7,59 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; color: #334155; padding: 25px 15px; margin: 0; -webkit-font-smoothing: antialiased; }
         .card { background: #ffffff; max-width: 600px; margin: 0 auto 50px auto; padding: 35px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 6px solid #cc1818; box-sizing: border-box; }
-        
         .header { text-align: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #e2e8f0; }
         h1 { font-size: 28px; margin: 0 0 4px 0; color: #0f172a; font-weight: 700; }
         .title-role { font-size: 16px; color: #cc1818; font-weight: 600; margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 0.5px; }
         .subtitle { font-size: 15px; color: #475569; margin: 0; font-weight: 500; }
         .group-tag { font-size: 12px; color: #64748b; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
-        
         .action-dock { background: #f1f5f9; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; margin: 20px 0 25px 0; }
         .contact-text { font-size: 14px; color: #334155; margin-bottom: 15px; line-height: 1.5; }
         .contact-text a { color: #0284c7; text-decoration: none; font-weight: 600; }
-        
         .btn-container { text-align: center; margin: 10px 0; }
         .btn { display: inline-block; background-color: #cc1818; color: white !important; padding: 14px 45px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; box-shadow: 0 4px 14px rgba(204,24,24,0.25); border: none; cursor: pointer; text-align: center; width: 80%; max-width: 300px; box-sizing: border-box; }
         .btn:hover { background-color: #a61010; }
-        
         .main-title { font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #cc1818; margin: 35px 0 15px 0; border-left: 4px solid #cc1818; padding-left: 12px; }
         .grade-lbl { font-size: 13px; font-weight: 700; text-transform: uppercase; margin: 20px 0 8px 0; color: #1e293b; letter-spacing: 0.5px; background: #f8fafc; padding: 6px 10px; border-radius: 4px; border-left: 3px solid #475569; }
         .format-text { font-size: 12px; color: #64748b; font-style: italic; margin-top: -10px; margin-bottom: 12px; padding-left: 2px; }
-        
         .list-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 5px 15px; margin-bottom: 15px; }
         .list-row { display: flex; padding: 10px 0; border-bottom: 1px solid #f1f5f9; align-items: flex-start; }
         .list-row:last-child { border-bottom: none; }
         .item-name { width: 140px; font-weight: 700; color: #0f172a; font-size: 13px; flex-shrink: 0; }
         .item-desc { color: #475569; font-size: 12.5px; line-height: 1.4; padding-left: 10px; }
-        
         .focus-box { background: #fffaf0; border: 1px solid #feebc8; padding: 12px 14px; border-radius: 8px; font-size: 13px; color: #c2410c; margin: 15px 0; display: flex; align-items: center; gap: 8px; line-height: 1.4; }
-        .sub-link-text { font-size: 13px; color: #64748b; margin: -6px 0 15px 2px; }
-        .sub-link-text a { color: #0284c7; text-decoration: none; font-weight: 600; }
-        
         .cdu-box .list-row { background: #fafdfb; border-bottom: 1px solid #eaf7f2; }
         .cdu-box .item-name { color: #166534; }
-        
-        /* Modern Structured Bottom Footer Area for Portal Links */
         .card-footer { border-top: 1px solid #e2e8f0; padding-top: 25px; margin-top: 40px; text-align: center; }
         .footer-btn { display: inline-block; background-color: #f1f5f9; border: 1px solid #cbd5e1; color: #334155 !important; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 13px; margin: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
-        .footer-btn:hover { background-color: #e2e8f0; border-color: #94a3b8; }
         .footer-btn.cdu-highlight { background-color: #f0fdf4; border-color: #bbf7d0; color: #166534 !important; }
-        .footer-btn.cdu-highlight:hover { background-color: #dcfce7; border-color: #86efac; }
     </style>
+    <script>
+        function downloadVCard() {
+            const vcard = [
+                "BEGIN:VCARD",
+                "VERSION:3.0",
+                "N:Aquilina;Kenneth;;Mr.;",
+                "FN:Mr. Kenneth Aquilina",
+                "ORG:Terranova Industrial Supplies Ltd;Terranova Srl Group",
+                "TITLE:Manager",
+                "TEL;TYPE=CELL,VOICE:+35699471999",
+                "EMAIL;TYPE=PREF,INTERNET:malta@terranovasrl.it",
+                "URL;TYPE=WORK:https://terranovasrl.it",
+                "URL;TYPE=CDU_Catalogue:https://cdu.net",
+                "NOTE:NON-FERROUS METALS:\\n- Stainless Steel: 303, 304, 316, 321, 410, 420, 431, 440, 630 (Certified Food Grade Line)\\n- Aluminum: 1050, 2011, 6060/6082, 3571, 5754, 5083, 7075, 2024, Aluminum Bronze\\n- Other Alloys: Brass, Bronze, Copper.\\n\\nFERROUS STEELS:\\n- Carbon & Alloy Grades: 39NiCrMo3B, 42CrMo4B, 18NiCrMo5, 20MnCrS5, 16CrNi4, 40NiCrMo7, C45/C50 Cromato, AVP, PR80, FE 360, FE 37, C45, A105, Cast Iron\\n- Tool Steels: K100, K110, K720.\\n\\nENGINEERING THERMOPLASTICS:\\n- POM-C, PVC, PA-6, PTFE, PEEK, Polycarbonate.\\n\\nCDU CONSORTIUM RANGE:\\n- Comprehensive industrial supplies, engineering metrology, Cutting Tools & PPE safety gear distribution.",
+                "END:VCARD"
+            ].join("\r\n");
+
+            const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "kenneth_aquilina.vcf";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
 </head>
 <body>
 
@@ -59,13 +73,13 @@
     
     <div class="action-dock">
         <div class="contact-text">
-            ✉️ <a href="mailto:malta@terranovasrl.it?subject=Terranova%20Industrial%20Inquiry" target="_top">malta@terranovasrl.it</a> &nbsp;|&nbsp; 📱 <a href="tel:+35699471999">+356 99471999</a>
+            ✉️ <a href="mailto:malta@terranovasrl.it?subject=Terranova%20Industrial%20Inquiry">malta@terranovasrl.it</a> &nbsp;|&nbsp; 📱 <a href="tel:+35699471999">+356 99471999</a>
         </div>
         <div class="btn-container">
-            <a href="https://github.io" class="btn" target="_top">Save Contact Details</a>
+            <button onclick="downloadVCard()" class="btn">Save Contact Details</button>
         </div>
     </div>
-    
+  
     <!-- DIVISION 1: NON-FERROUS METALS -->
     <div class="main-title">Non-Ferrous Metals</div>
     <div class="format-text">Formats: Round, flat, square, hexagon, angle bars, sheets, tubes, and pipes • Multiple finishes</div>
